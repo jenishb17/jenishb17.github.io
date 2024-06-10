@@ -1,34 +1,63 @@
 body {
-    font-family: 'Times New Roman', Times, serif;
-    color: #fff; 
-    background: white;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    background: lightblue;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
-  }
-  #main-content {
-    position: absolute; 
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    text-align: center; 
-    width: 100%; 
-    color: black; 
-    font-size: 24px; 
-  }
-  #main-content h2 {
-    font-size: 50px; 
-    margin: 0.5em 0; 
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); 
- 
-  }
-  
+#main-content {
+    width: 80%; /* Adjust the width as needed */
+    max-width: 1000px; /* Keeps the content from being too wide on large screens */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
 
-  #main-content div {
-    font-size: 30px; 
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.5); 
-  }
-  
-  h2 {
-    font-size: 60px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-top: 0;
-  }
+img.MyselfPic {
+    max-width: 60%; /* Adjusted size for better fit */
+    height: 500px; /* Maintain aspect ratio */
+    flex: 0 0 auto;
+    z-index: 2; /* Ensures it is on top of the black square */
+    position: relative; /* Adjusts the image's position relative to its normal position */
+    right: 30%; /* Moves the image to the right; adjust as necessary */
+}
+
+#black-square {
+    width: 490px; /* Adjusted for better proportion */
+    height: 500px;
+    background-color: black;
+    position: absolute; /* Absolute positioning within the relative parent */
+    right: 25%; /* Position it slightly to the right */
+    transform: translate(-50%, -50%); /* Adjust for precise centering */
+    z-index: 1; /* Behind the image */
+    top: 40%;
+}
+
+.text-content {
+    width: 50%; /* Define width to manage text wrapping */
+    padding: 20px;
+    color: black;
+    font-size: 24px;
+    text-align: center; /* Center text */
+    position: absolute; /* Absolute positioning */
+    right: -10%; /* Adjust spacing from the right */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Precise vertical centering */
+}
+
+#main-content h2 {
+    font-size: 50px;
+    margin-bottom: 0.5em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+#main-content p {
+    font-size: 18px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
