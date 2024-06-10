@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 /* General settings for content sections, hidden by default */
 .content-section {
   display: none;
@@ -7,7 +8,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: #fff;
-  background: url('background2.jpg') no-repeat center center fixed;
+  background: url('images/background2.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -18,15 +19,16 @@ body {
   margin: 0;
 }
 
-/* Navigation bar settings, fixed at the top with full width */
+/* Navigation bar settings */
 .NavigationBar {
   width: 100%;
-  background: black;
+  background: linear-gradient(to bottom, black, transparent);
   justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
+  padding: 10px 0; /* Added padding for better visibility */
 }
 
 /* Container for navigation items within the navigation bar */
@@ -84,7 +86,7 @@ body {
 
 /* Additional styles for the active state of buttons */
 .nav-links button.active {
-  text-decoration:dotted;
+  text-decoration: dotted;
 }
 
 /* LinkedIn logo styling */
@@ -139,6 +141,12 @@ h2 {
 }
 
 /* Footer text styling */
+.footer b {
+  margin: 5px 0;
+  font-size: 20px;
+  color: #000;
+
+}
 .footer p {
   margin: 5px 0;
   font-size: 14px;
