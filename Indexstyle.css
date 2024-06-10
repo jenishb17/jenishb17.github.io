@@ -7,11 +7,15 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: #fff;
-  background: url('background2.jpg') no-repeat center center fixed;
+  background: url('images/background2.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
 }
 
 /* Navigation bar settings, fixed at the top with full width */
@@ -22,6 +26,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1000;
 }
 
 /* Container for navigation items within the navigation bar */
@@ -92,10 +97,11 @@ body {
 
 /* Main content styling */
 #main-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   width: 100%;
   color: white;
@@ -124,3 +130,17 @@ h2 {
   margin-top: 0;
 }
 
+/* Footer styling */
+.footer {
+  background: #e0e0e0;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+/* Footer text styling */
+.footer p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #000;
+}
