@@ -24,6 +24,15 @@ body {
     align-items: center;
     padding: 50px;
 }
+.black-box {
+    position: absolute;
+    top: 250px;
+    left: 0px;
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    z-index: -1;
+}
 
 /* Profile picture styling */
 .profile-pic {
@@ -40,7 +49,7 @@ body {
 
 /* Heading styles within the about text */
 .about-text h1 {
-    font-size: 50px;
+    font-size: 35px;
     margin-bottom: 20px;
     font-family: 'Poppins', sans-serif;
 }
@@ -50,7 +59,7 @@ body {
     font-size: 16px;
     line-height: 1.6;
     font-family: 'Raleway', sans-serif;
-
+    justify-self: center;
 }
 
 

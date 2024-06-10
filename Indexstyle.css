@@ -8,7 +8,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: #fff;
-  background: url('background2.jpg') no-repeat center center fixed;
+  background: url('images/background2.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -22,12 +22,15 @@ body {
 /* Navigation bar settings */
 .NavigationBar {
   width: 100%;
+  height: 20px;
   background: linear-gradient(to bottom, black, transparent);
+  background: black;
   justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
+  
   padding: 10px 0; /* Added padding for better visibility */
 }
 
@@ -49,7 +52,7 @@ body {
 
 /* Individual list items within the navigation */
 .nav-links li {
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
 /* Button styling within navigation links */
@@ -57,13 +60,17 @@ body {
   background: none;
   border: none;
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
   padding: 10px 20px;
   cursor: pointer;
   position: relative;
   overflow: hidden;
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+  display: inline-block;
+  top: -10px;
 }
 
 /* Pseudo-element for animated underline effect */
@@ -82,10 +89,12 @@ body {
 .nav-links button:hover::before, .nav-links button.active::before {
   width: 100%;
   left: 0;
+  text-decoration: dotted;
 }
 
 /* Additional styles for the active state of buttons */
 .nav-links button.active {
+  
   text-decoration: dotted;
 }
 
@@ -95,6 +104,8 @@ body {
   height: auto;
   cursor: pointer;
   padding: 10px 20px;
+  position: relative;
+  top: -10px;
 }
 
 /* Main content styling */
