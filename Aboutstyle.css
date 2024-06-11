@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+/* General settings for body */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000;
+    background: none;
+    background-color: white; /* Changed background to white */
+}
+
+/* Main content styling */
+#about-content {
+    padding-top: 100px;
+    text-align: center;
+}
+
+/* Container for about section */
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.black-box {
+    position: relative;
+    top: 20px;
+    left: 110px;
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    z-index: -1;
+}
+
+/* Profile picture styling */
+.profile-pic {
+    max-width: 450px;
+    margin-right: 50px;
+    height: 600px;
+}
+
+/* About text styling */
+.about-text {
+    max-width: 600px;
+    color: black;
+}
+
+/* Heading styles within the about text */
+.about-text h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Paragraph styles within the about text */
+.about-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+}
+.contact-info {
+    width: auto;
+    padding: 10px;
+    margin-top: 20px;
+    background-color:  black;  /* Light grey background */
+    border-radius: 10px;  /* Rounded corners */
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);  /* subtle shadow for depth */
+    font-family:'Times New Roman', Times, serif  /* consistent font style */
+}
+.contact-info p {
+    margin: 5px 0;  /* space between text lines */
+    color: white;  /* dark grey text for better readability */
+    font-size: 20px;
+}
+.contact-info a {
+    color: white;  /* standard link color */
+    text-decoration: none;  /* no underline */
+ 
+}
+.contact-info a:hover {
+    text-decoration: underline;  /* underline on hover for better user interaction */
+}
+
+
+
