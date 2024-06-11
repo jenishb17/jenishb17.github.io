@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 body {
   font-family: 'Roboto', sans-serif;
   color: #000;
-  background: none;
   background: white;
   margin: 0;
 }
@@ -12,10 +14,20 @@ body {
   padding: 20px;
 }
 
+.project-box {
+  background: lightgray; /* Light background color for the box */
+  border-radius: 15px; /* Rounded corners */
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  margin-bottom: 20px; /* Space between boxes */
+  position: relative;
+  top: 30px;
+}
+
 .project {
   display: flex;
-  align-items: center;
-  margin: 40px 0;
+  align-items: flex-start;
+  margin: 0; /* Remove margin from project */
 }
 
 .project-image-container {
@@ -35,29 +47,48 @@ body {
   position: absolute;
   top: 10px;
   left: 10px;
-  width: 100%;
+  width: 400px;
   height: 100%;
+  top: 40px;
+  left: -13px;
   background-color: black;
   z-index: -1;
 }
 
 .project-image img {
-  width: 100%;
-  height: 100%;
+  width: 400px;
+  height: 200px;
+  top: 55px;
+  left: 5px;
+  position: relative;
 }
 
 .project-description {
   max-width: 600px;
   flex-grow: 1; 
+  text-align: left; /* Ensures text is left-aligned */
+  
+  
 }
 
 .project-description h3 {
+  max-width: 450px;
   margin: 0;
-  font-size: 1.5em;
+  font-size: 35px;
   color: #000;
+  position: absolute;
+  top: 100px;
+  left: 450px;
+  
 }
 
 .project-description p {
-  margin: 5px 0 0;
+  max-width: 550px;
+  position: absolute;
   color: #000;
+  font-size: 14px;
+  margin-top: 10px;
+  left: 60%;
+  top: 60px;
+  font-family: 'Poppins', sans-serif;
 }

@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const mainContent = document.getElementById("main-content");
     const sectionButtons = document.querySelectorAll(".section-button");
-    
+
     function loadContent(sectionName) {
     const xhr = new XMLHttpRequest();
     xhr.open("GET", sectionName + ".html", true);
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     };
     xhr.send();
     }
-    
+
     function fadeContent(newContent) {
     mainContent.style.opacity = 0;
     setTimeout(() => {
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
     fadeInContent();
     }, 500);
     }
-    
+
     function fadeInContent() {
     let opacity = 0;
     const fadeIn = setInterval(() => {
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
     mainContent.style.opacity = opacity;
     }, 25);
     }
-    
+
     sectionButtons.forEach(button => {
     button.addEventListener("click", function () {
     sectionButtons.forEach(btn => btn.classList.remove('active'));
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
     loadContent(this.getAttribute("data-section"));
     });
     });
-    
+
     // Initially set the home button as active on page load
     document.getElementById('home-button').classList.add('active');
     loadContent('home'); // Assuming 'home' is the initial section
