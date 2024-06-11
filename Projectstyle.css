@@ -1,43 +1,62 @@
 body {
   font-family: 'Roboto', sans-serif;
-  color: #fff;
-  background: lightblue;
+  color: #000;
+  background: white;
   margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
 }
-  .NavigationBar {
 
-    background: black; 
-  }
-  
-  #main-content {
-    position: absolute; 
-    top: 15%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    text-align: left; 
-    width: 100%; 
-    color: black; 
-    font-size: 24px; 
-  }
-  #main-content h2 {
-    font-size: 50px; 
-    margin: 0.5em 0; 
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); 
- 
-  }
-  
+.projects {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
 
-  #main-content div {
-    font-size: 10px; 
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.5); 
-  }
-  
-  h2 {
-    font-size: 60px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-top: 0;
-  }
+.project {
+  display: flex;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.project-image-container {
+  position: relative;
+  width: 300px; 
+  height: 300px; 
+  margin-right: 40px; 
+}
+
+.project-image {
+  position: relative;
+  z-index: 1;
+}
+
+.project-image::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: -1;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.project-description {
+  max-width: 600px;
+  flex-grow: 1; 
+}
+
+.project-description h3 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #000;
+}
+
+.project-description p {
+  margin: 5px 0 0;
+  color: #000;
+}
