@@ -23,11 +23,11 @@ document.addEventListener("DOMContentLoaded", function () {
         setTimeout(() => {
             mainContent.innerHTML = newContent;
             fadeInContent();
-
+            initializeCarousel();
             // Conditionally initialize the carousel for the portfolio section
-            if (sectionName === 'portfolio') {
-                initializeCarousel();
-            }
+            // if (sectionName === 'portfolio') {
+            //   initializeCarousel();
+            // }
         }, 500);
     }
 
